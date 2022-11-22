@@ -1,1 +1,1 @@
-# This is a repository of the final project for SDEV 220
+# This is a repository for the final project - SDEV 220
