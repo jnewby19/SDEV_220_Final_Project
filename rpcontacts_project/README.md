@@ -1,1 +1,1 @@
-Update
+Placeholder for user's manual
