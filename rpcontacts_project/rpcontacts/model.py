@@ -12,9 +12,7 @@ class ContactsModel:
 
     @staticmethod
     def _createModel():
-
         """Create and set up the model."""
-
         tableModel = QSqlTableModel()
         tableModel.setTable("contacts")
         tableModel.setEditStrategy(QSqlTableModel.OnFieldChange)
@@ -31,4 +29,18 @@ class ContactsModel:
         for column, field in enumerate(data):
             self.model.setData(self.model.index(rows, column + 1), field)
         self.model.submitAll()
+        self.model.select()
+
+    def deleteContact(self, row):
+        """Remove a contact from the database."""
+        self.model.removeRow(row)
+        self.model.submitAll()
+        self.model.select()
+
+    def clearContacts(self):
+        """Remove all contacts in the database."""
+        self.model.setEditStrategy(QSqlTableModel.OnManualSubmit)
+        self.model.removeRows(0, self.model.rowCount())
+        self.model.submitAll()
+        self.model.setEditStrategy(QSqlTableModel.OnFieldChange)
         self.model.select()
