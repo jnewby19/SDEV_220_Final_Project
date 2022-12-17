@@ -1,7 +1,29 @@
+"""
+------------------------------------------------------------------------------------------------------------------------------------
+Program Name: Absolute Mechanic Client Directory - views.py
+
+SDEV 220
+
+Contributors:
+    Jacob Newby - Editor
+    Willie Alford - Editor
+    Marcos Valencia - Editor
+    Josh Lanier - Editor/Documentation
+
+Last Revision: 2022-12-16
+
+Program Purpose: To give auto mechanics and staff at Absolute Mechanic an easy to navigate client directory, where they can access 
+a directory of clients, their cars, and issues, and add, edit, and delete them.
+
+Module Purpose: To provide views to manage the contacts table, essentially the visual elements of the application, utilizing two 
+classes: class Window and class AddDialog.
+
+------------------------------------------------------------------------------------------------------------------------------------
+"""
+
 # -*- coding: utf-8 -*-
 # rpcontacts/views.py
 
-"""This module provides views to manage the contacts table."""
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import (
     QAbstractItemView,

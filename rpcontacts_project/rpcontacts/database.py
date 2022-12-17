@@ -1,3 +1,23 @@
+"""
+------------------------------------------------------------------------------------------------------------------------------------
+Program Name: Absolute Mechanic Client Directory - database.py
+
+SDEV 220
+
+Contributors:
+    Ayden Pitstick - Editor
+    Josh Lanier - Documentation
+
+Last Revision: 2022-12-16
+
+Program Purpose: To give auto mechanics and staff at Absolute Mechanic an easy to navigate client directory, where they can access 
+a directory of clients, their cars, and issues, and add, edit, and delete them.
+
+Module Purpose: To create and manage the connection with the SQLite3 database that provides the records and data for the table.
+
+------------------------------------------------------------------------------------------------------------------------------------
+"""
+
 from PyQt5.QtWidgets import QMessageBox
 from PyQt5.QtSql import QSqlDatabase, QSqlQuery
 

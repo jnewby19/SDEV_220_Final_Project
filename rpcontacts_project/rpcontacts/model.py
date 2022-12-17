@@ -1,5 +1,25 @@
 
-"""This module provides a model to manage the contacts table."""
+"""
+------------------------------------------------------------------------------------------------------------------------------------
+Program Name: Absolute Mechanic Client Directory - model.py
+
+SDEV 220
+
+Contributors:
+    Jacob Newby - Editor
+    Marcos Valencia - Editor
+    Josh Lanier - Editor/Documentation
+
+Last Revision: 2022-12-16
+
+Program Purpose: To give auto mechanics and staff at Absolute Mechanic an easy to navigate client directory, where they can access 
+a directory of clients, their cars, and issues, and add, edit, and delete them.
+
+Module Purpose: To provide a model to manage the contacts table and its interactions with the database. It acts as the intermediary, 
+updating the database as actions are taken in the application.
+
+------------------------------------------------------------------------------------------------------------------------------------
+"""
 
 
 from PyQt5.QtCore import Qt
